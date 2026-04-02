@@ -44,7 +44,7 @@ Wavepedia 是 Wave App 的配套知识库，系统梳理女性荷尔蒙、神经
 
 ### Huberman Lab
 
-- **[× Stacy Sims (2024-07-22)](sources/huberman-lab/2024-07-22_female-exercise-nutrition_stacy-sims.md)** — 女性运动与营养的全景式访谈；空腹训练危害机制；月经周期分期训练；60分钟恢复窗口；肌酸Creapure专用；芬兰桑拿协议；年龄分段训练策略
+- **[× Stacy Sims (2024-07-22)](sources/huberman-lab/2024-07-22_female-exercise-nutrition_stacy-sims.md)** — 女性运动与营养的全景式访谈；空腹训练危害机制；月经周期分期训练；60分钟恢复窗口；肌酸一水合物（关注纯度）；芬兰桑拿协议；年龄分段训练策略
 - **[× Sara Gottfried (2026-04-02)](sources/huberman-lab/2026-04-02_female-hormone-health-longevity_sara-gottfried.md)** — 女性荷尔蒙优化全生命周期；肠道微生物组与雌激素循环；女性特异性消化问题（比男性高10倍）；雌激素代谢物与DNA损伤风险
 - **[× Marc Breedlove (2026-03-30)](sources/huberman-lab/2026-03-30_hormones-brain-behavior_breedlove.md)** — 产前荷尔蒙塑造大脑，性别特异性医学的系统性盲区
 - **[× Rhonda Patrick (2026-03-23)](sources/huberman-lab/2026-03-23_vitality-health-protocols_rhonda-patrick.md)** — 咖啡因/肌酸/断食的女性特异性警告；时间营养学
