@@ -346,7 +346,7 @@
 ## 摘要（Podcast Notes 档案）
 
 *原始脚本：Mel Robbins Podcast Archive / 女性健康 / 2025-03-27-body-reset-stacy-sims.md*
-*成绩单可用性：YouTube 视频有自动生成的字幕*
+*逐字稿来源：YouTube 自动生成字幕*
 
 ---
 
