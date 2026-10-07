@@ -27,7 +27,7 @@ against:
 population: 自然且有排卵的非懷孕週期生理；來源樣本的年齡與排除條件不同，不外推為個人激素資訊
 not_for: [單靠日期確認已排卵, 判定個人孕酮, 生育力或疾病判定, 激素避孕, 懷孕, 產後或哺乳的固定分期, PCOS 的固定分期, 圍絕經期的固定分期, 無排卵週期的四段推定]
 used_by: [F05, F06, "string:todayPhaseLuteal", "string:todayCycleEstimated", "constant:CycleRules.estimatedLutealLengthDays"]
-checked: —
+checked: 2026-10-07
 expert: —
 ---
 
@@ -38,7 +38,7 @@ expert: —
 ## 給 PM
 
 - F06 `todayPhaseLuteal` 的實際字是「黃體期」；F05 在估計排卵日之後至設定 L 顯示這個模型區段。必須有「估算」，不能解讀為已確認排卵、孕酮較高或個人身體狀態。
-- 生理說明只適用「已發生排卵」的自然週期；自述規律及有出血記錄不能由 Wave 證明这一前提。
+- 生理說明只適用「已發生排卵」的自然週期；自述規律及有出血記錄不能由 Wave 證明這一前提。
 - ASRM 是官方生理／臨床意見，不是對 Wave 的驗證。引用其中生理不等於採用疾病門檻、檢測或治療建議。
 - 十四天預設的支持及反例另見 R03 `luteal-phase-length`；不以另一研究的平均數替換成人人固定十二天。
 - 文案候選（待審）：黃體期是排卵後的階段。這裡依日期估算，不能確認妳已排卵或激素濃度。

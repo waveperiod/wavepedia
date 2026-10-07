@@ -21,7 +21,7 @@ against:
 population: 自然且有排卵的週期之分期含義；Bull 為 18–45 歲、有足夠 BBT 資料的 App 使用者；Fehring 為規律女性
 not_for: [單靠日期確認階段, 激素避孕下的自然分期, 懷孕, 產後或哺乳的固定分期, PCOS 的固定分期, 圍絕經期的固定分期, 無排卵週期的四段假設, 激素或飲食運動判斷]
 used_by: [F05, F06, "string:todayPhaseFollicular", "string:todayCycleEstimated", "constant:CycleRules.estimatedPeriodLengthDays", "constant:CycleRules.estimatedLutealLengthDays"]
-checked: —
+checked: 2026-10-07
 expert: —
 ---
 
@@ -31,9 +31,9 @@ expert: —
 
 ## 給 PM
 
-- F06 `todayPhaseFollicular` 的實際字是「濾泡期」。F05 只把規律模式第六天到 L−14 之前一日顯示為它；这是從完整濾泡期中拆出的產品區段，不是「第六天身體才進入濾泡期」。
+- F06 `todayPhaseFollicular` 的實際字是「濾泡期」。F05 只把規律模式第六天到 L−14 之前一日顯示為它；這是從完整濾泡期中拆出的產品區段，不是「第六天身體才進入濾泡期」。
 - 需要「估算」；第六天標籤不能證明出血已結束。不能據此推定雌激素濃度、精力或訓練表現。
-- 研究包含生理觀測，Wave 的日期／貼紙模型沒有這些測量；不能借原研究對其算法的验证替 Wave 背書。
+- 研究包含生理觀測，Wave 的日期／貼紙模型沒有這些測量；不能借原研究對其算法的驗證替 Wave 背書。
 - 文案候選（待審）：濾泡期從經期開始，延續到排卵前後的分期邊界。這裡只顯示依日期估算的區段。
 
 研究交稿：2026-10-07；`checked`／`expert` 未審。

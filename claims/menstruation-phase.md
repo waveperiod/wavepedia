@@ -21,7 +21,7 @@ against:
 population: 自然週期的一般生理說明；反例研究為 BioCycle 的規律經期女性，不能將其發生率外推所有人
 not_for: [由貼紙判定出血原因, 證明已排卵, 激素避孕出血的自然階段推定, 懷孕出血分類, 產後或哺乳的固定階段推定, PCOS 的固定階段推定, 圍絕經期的固定階段推定]
 used_by: [F05, F06, "string:todayPhaseMenstruation", "string:todayCycleEstimated", "constant:CycleRules.estimatedPeriodLengthDays"]
-checked: —
+checked: 2026-10-07
 expert: —
 ---
 
@@ -32,9 +32,9 @@ expert: —
 ## 給 PM
 
 - F06 `todayPhaseMenstruation` 的實際字是「月經期」。F05 在規律模式用第 1–5 天顯示它，不能聲稱已確認當天出血或其原因；需要同時顯示「估算」。
-- 這個名稱描述子宮的出血过程，會與卵巢的早期濾泡期重疊。四個 App 區段不是四段互不重疊的生理分類。
+- 這個名稱描述子宮的出血過程，會與卵巢的早期濾泡期重疊。四個 App 區段不是四段互不重疊的生理分類。
 - 九種出血貼紙與超過十五天的新開始規則是產品分組。點狀出血不一定是新經期；不能把分類輸出當醫療結論。
-- 本條不支持出血量判斷、個人出血結束日、食物／運動處方。五天的群體依据另見 R03 `estimated-period-length`。
+- 本條不支持出血量判斷、個人出血結束日、食物／運動處方。五天的群體依據另見 R03 `estimated-period-length`。
 - 說明文案候選（待審）：月經期是經期出血的階段。這裡依日期估算，貼紙記錄保留妳實際記下的情況。
 
 研究交稿：2026-10-07；`checked`／`expert` 待正式審核。

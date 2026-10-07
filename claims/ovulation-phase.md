@@ -6,7 +6,7 @@ evidence_scope: 排卵名稱及需要生理資料的限制；不支持 Wave 確�
 sources:
   - id: official:NHS-menstrual-cycle-2023
     url: https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/
-    identifier_note: 官方網頁没有 DOI／PMID；原始研究識別碼見下，不虛構期刊號
+    identifier_note: 官方網頁沒有 DOI／PMID；原始研究識別碼見下，不虛構期刊號
     quote: "Ovulation is the release of an egg from the ovaries."
     locator: What happens during ovulation?
     read: full
@@ -27,7 +27,7 @@ against:
 population: 自然有排卵週期的生理說明；Ecochard 為 18–45 歲、規律有生育力的 107 位女性；Johnson 為尿液 LH 觀測志願者
 not_for: [避孕, 備孕指導, 確認個人排卵, 激素避孕, 懷孕, 產後或哺乳的固定分期, PCOS 的固定分期, 圍絕經期的固定分期, 無排卵週期的四段推定]
 used_by: [F05, F06, "string:todayPhaseOvulation", "string:todayCycleEstimated", "constant:CycleRules.estimatedLutealLengthDays"]
-checked: —
+checked: 2026-10-07
 expert: —
 ---
 
