@@ -22,10 +22,10 @@
 |---|---|---|
 | `estimatedPeriodLengthDays = 5` | estimated-period-length | 是日期區段，不代表第五天已停止出血 |
 | `estimatedLutealLengthDays = 14` | luteal-phase-length | 是假設，不能確認排卵日或激素 |
-| `todayPhaseMenstruation`＝月經期 | 五天＋calendar；名稱 R02 補 | 與「估算」同時顯示 |
-| `todayPhaseFollicular`＝濾泡期 | 五天＋calendar；名稱 R02 補 | 同上；第六天標籤不證明已停血 |
-| `todayPhaseOvulation`＝排卵期 | 十四天＋calendar；名稱 R02 補 | 同上；不能解讀為已排卵 |
-| `todayPhaseLuteal`＝黃體期 | 十四天＋calendar；名稱 R02 補 | 同上；不提供激素／訓練判斷 |
+| `todayPhaseMenstruation`＝月經期 | 五天＋calendar；名稱見 R02 PR #2 | 與「估算」同時顯示 |
+| `todayPhaseFollicular`＝濾泡期 | 五天＋calendar；名稱見 R02 PR #2 | 同上；第六天標籤不證明已停血 |
+| `todayPhaseOvulation`＝排卵期 | 十四天＋calendar；名稱見 R02 PR #2 | 同上；不能解讀為已排卵 |
+| `todayPhaseLuteal`＝黃體期 | 十四天＋calendar；名稱見 R02 PR #2 | 同上；不提供激素／訓練判斷 |
 | `todayCycleEstimated`＝估算 | 三條共同限制 | 是模型資訊，未驗證個人階段 |
 | `todayCycleDay`＝週期第 %lld 天 | calendar，從認定起點日計數 | 無 phase 時可保留真實經過天數，不自動繞回第 1 天 |
 | `todayCycleTitle`＝週期資訊 | calendar | 無經期／不確定選項按既定規則隱藏整卡 |
@@ -33,7 +33,9 @@
 | `todayPhaseAfter`＝最近經期記錄之後 | 同上 | 不表示生理出血已結束 |
 | `beforePeriod`／「前」新 key | 原 App 尚無；等 cycle／recording 實際新增後補 mapping | 至少三個真實起點、兩完整週期；一定是估算，不是 PMS／黃體期證明 |
 
-前／中 N 的具體值仍以 PM／Zurara 批准為準，本稿不把研究範圍當产品 N。兩個過往週期足夠啟用是產品門檻，沒有臨床驗證。15 天新週期分組也不是医学分類。
+2026-10-07 協調 `cycle-status.json` 後續已記錄前 **3 天**、中容許漏記 **1 天**、至少 **2 個完整週期／3 個起點**。這些是產品決策，不是本稿從研究推得的 N；仍待 cycle 交最終實作常數／新 key 核對。兩個過往週期足夠啟用是產品門檻，沒有臨床驗證。15 天新週期分組也不是医学分類。
+
+R02 四個名稱條目已另交 [draft PR #2](https://github.com/waveperiod/wavepedia/pull/2)，同樣未 checked／expert；兩項不因開 PR 而解除 F06 gate。
 
 ## 來源定位與版本
 
