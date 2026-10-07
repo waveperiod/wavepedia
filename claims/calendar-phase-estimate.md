@@ -27,7 +27,7 @@ against:
 population: 對自然週期日曆法的限制描述；原始研究包含規律女性及尿液 LH 觀測志願者，不能直接外推全部人群
 not_for: [避孕, 備孕指導, 確認排卵, 診斷, 激素避孕下的自然階段判定, 懷孕, 產後或哺乳的四階段判定, PCOS 的固定階段判定, 圍絕經期的固定階段判定, 無排卵週期的四階段判定]
 used_by: [F05, F06, "string:todayCycleEstimated", "string:todayCycleDay", "string:todayCycleTitle", "string:todayPhaseMenstruation", "string:todayPhaseFollicular", "string:todayPhaseOvulation", "string:todayPhaseLuteal", "string:todayPhaseDuring", "string:todayPhaseAfter"]
-checked: —
+checked: 2026-10-07
 expert: —
 ---
 
@@ -41,7 +41,7 @@ expert: —
 
 - `todayCycleDay` 是從產品認定的開始日算起的日期計數；開始日可能來自自述或貼紙分組，不能稱為經實驗確認的生理週期日。
 - 規律模式超出設定 L 或 L≤20 不顯示四階段，是模型容納／過期規則，不是健康判定；不把它當「沒有排卵」。
-- `minimumNewCycleGapDays = 15`、九種出血 key 分組、至少三個開始日才估「前」、前 N 天與漏記 N 天，全是產品記錄規則。**沒有找到原始研究验证這套貼紙分組或兩週期平均能確認本次身體階段。**
+- `minimumNewCycleGapDays = 15`、九種出血 key 分組、至少三個開始日才估「前」、前 N 天與漏記 N 天，全是產品記錄規則。**沒有找到原始研究驗證這套貼紙分組或兩週期平均能確認本次身體階段。**
 - 「前」來自個人過往平均，仍需「估算」；「中」只指最近記錄在窗口內；「後」只指窗口外，不能寫成出血已結束、PMS、已進入濾泡期或已排卵。
 - 沒有新貼紙不能確認停經、懷孕、出血結束或任何疾病。
 - 特殊人群列為「本模型未驗證／不宜直接套用」，不是宣稱她們每個週期都無排卵。Onboarding 現有五選項不能辨識全部特殊人群；交 PM／Claude 決定說明與外部版本策略，不在本輪新增 R04 功能。

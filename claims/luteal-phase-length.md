@@ -31,10 +31,10 @@ against:
     locator: Abstract, Results; short verbatim excerpt
     read: abstract
     relevance: 不同估計排卵方法及樣本得出不同中心值，不能據此改成個人固定十二天
-population: 自然週期的群體参考；大型 App 研究為 18–45 歲、可由 BBT 算法辨識排卵的週期；來源各有排除條件
+population: 自然週期的群體參考；大型 App 研究為 18–45 歲、可由 BBT 算法辨識排卵的週期；來源各有排除條件
 not_for: [確認個人排卵日, 個人激素濃度判定, 激素避孕, 懷孕, 產後或哺乳, PCOS, 圍絕經期, 無排卵週期, 生育力或疾病判定]
 used_by: [F05, F06, "constant:CycleRules.estimatedLutealLengthDays", "string:todayPhaseOvulation", "string:todayPhaseLuteal", "string:todayCycleEstimated"]
-checked: —
+checked: 2026-10-07
 expert: —
 ---
 

@@ -27,7 +27,7 @@ against:
 population: 群體參考；BioCycle 為規律經期女性，另一前瞻隊列為 18–40 歲、沒有已知生育力問題的女性
 not_for: [個人出血結束判定, 激素避孕下的自然週期推定, 懷孕, 產後或哺乳期的固定天數推定, 圍絕經期的固定天數推定, PCOS 的固定天數推定, 無排卵週期的四階段推定]
 used_by: [F05, F06, "constant:CycleRules.estimatedPeriodLengthDays", "string:todayPhaseMenstruation", "string:todayPhaseFollicular", "string:todayCycleEstimated"]
-checked: —
+checked: 2026-10-07
 expert: —
 ---
 
