@@ -33,7 +33,7 @@ expert: —
 
 # 「排卵期」的顯示不能當作事件確認
 
-[NHS 官方衛教](https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/)描述排卵事件。[Ecochard 原始研究摘要](https://pubmed.ncbi.nlm.nih.gov/11510707/)用超音波及激素／其他指標比較事件時間，顯示觀測指標之間也有差異。[Johnson 原始研究摘要](https://pubmed.ncbi.nlm.nih.gov/29749274/)說明純日曆估算的不足。沒有找到否定事件定義的研究；反證針對「日曆顯示＝已排卵」這個推論。
+NHS 官方衛教描述排卵事件 [1]。Ecochard 原始研究摘要用超音波及激素／其他指標比較事件時間，顯示觀測指標之間也有差異 [2]。Johnson 原始研究摘要說明純日曆估算的不足 [3]。沒有找到否定事件定義的研究；反證針對「日曆顯示＝已排卵」這個推論。
 
 ## 給 PM
 
@@ -42,4 +42,10 @@ expert: —
 - Wave 沒有 LH／BBT／超音波資料。此條引用它們只是說明測量與日期推算不同，不在本輪新增相關記錄／解讀功能。
 - 文案候選（待審）：排卵是卵子從卵巢釋出的事件。這裡只依日期估算，沒有確認妳的排卵日。
 
-研究交稿：2026-10-07；`checked`／`expert` 未審。
+研究交稿：2026-10-07；Claude 已於同日[正式查證](https://github.com/waveperiod/wavepedia/pull/2#issuecomment-6045658829)並填入 `checked`。`expert` 仍待簽核。2026-10-08 僅整理正文引用與書目，既有健康說法、來源原句與查證日期保留；本輪格式更新待 Reviewer 核對。
+
+## 參考文獻
+
+1. NHS. Periods and fertility in the menstrual cycle [Internet]. London: NHS; [cited 2026 Oct 7]. Available from: https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/
+2. Ecochard R, Boehringer H, Rabilloud M, Marret H. Chronological aspects of ultrasonic, hormonal, and other indirect indices of ovulation. BJOG. 2001;108(8):822-9. doi:10.1111/j.1471-0528.2001.00194.x. PMID: 11510707.
+3. Johnson S, Marriott L, Zinaman M. Can apps and calendar methods predict ovulation with accuracy? Curr Med Res Opin. 2018;34(9):1587-94. doi:10.1080/03007995.2018.1475348. PMID: 29749274.

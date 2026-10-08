@@ -27,7 +27,7 @@ expert: —
 
 # 「月經期」表示什麼
 
-[NHS 官方衛教](https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/)將月經說明為子宮內膜與血液排出的過程，以開始日作日曆週期第 1 天。[BioCycle 原始研究摘要](https://pubmed.ncbi.nlm.nih.gov/22350580/)也觀察到週期中的出血；沒有否定生理定義的研究，反例針對從出血推定階段。
+NHS 官方衛教將月經說明為子宮內膜與血液排出的過程，以開始日作日曆週期第 1 天 [1]。BioCycle 原始研究摘要也觀察到週期中的出血；沒有否定生理定義的研究，反例針對從出血推定階段 [2]。
 
 ## 給 PM
 
@@ -37,4 +37,9 @@ expert: —
 - 本條不支持出血量判斷、個人出血結束日、食物／運動處方。五天的群體依據另見 R03 `estimated-period-length`。
 - 說明文案候選（待審）：月經期是經期出血的階段。這裡依日期估算，貼紙記錄保留妳實際記下的情況。
 
-研究交稿：2026-10-07；`checked`／`expert` 待正式審核。
+研究交稿：2026-10-07；Claude 已於同日[正式查證](https://github.com/waveperiod/wavepedia/pull/2#issuecomment-6045658829)並填入 `checked`。`expert` 仍待簽核。2026-10-08 僅整理正文引用與書目，既有健康說法、來源原句與查證日期保留；本輪格式更新待 Reviewer 核對。
+
+## 參考文獻
+
+1. NHS. Periods and fertility in the menstrual cycle [Internet]. London: NHS; [cited 2026 Oct 7]. Available from: https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/
+2. Dasharathy SS, Mumford SL, Pollack AZ, Perkins NJ, Mattison DR, Wactawski-Wende J, et al. Menstrual bleeding patterns among regularly menstruating women. Am J Epidemiol. 2012;175(6):536-45. doi:10.1093/aje/kwr356. PMID: 22350580.

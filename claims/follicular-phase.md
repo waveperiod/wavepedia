@@ -27,7 +27,7 @@ expert: —
 
 # 「濾泡期」不是從出血結束才開始
 
-[原始研究的分期方法](https://www.nature.com/articles/s41746-019-0152-7)從經期起點算濾泡期，以估計排卵日作最後一日；實際排卵日依 BBT／LH 估計。月經出血與這個卵巢階段可以同時存在。[規律女性前瞻研究摘要](https://pubmed.ncbi.nlm.nih.gov/16700687/)觀察到長度變異。定義與測量方法要分開看。
+原始研究的分期方法從經期起點算濾泡期，以估計排卵日作最後一日；實際排卵日依 BBT／LH 估計。月經出血與這個卵巢階段可以同時存在 [1]。規律女性前瞻研究摘要觀察到長度變異。定義與測量方法要分開看 [2]。
 
 ## 給 PM
 
@@ -36,4 +36,9 @@ expert: —
 - 研究包含生理觀測，Wave 的日期／貼紙模型沒有這些測量；不能借原研究對其算法的驗證替 Wave 背書。
 - 文案候選（待審）：濾泡期從經期開始，延續到排卵前後的分期邊界。這裡只顯示依日期估算的區段。
 
-研究交稿：2026-10-07；`checked`／`expert` 未審。
+研究交稿：2026-10-07；Claude 已於同日[正式查證](https://github.com/waveperiod/wavepedia/pull/2#issuecomment-6045658829)並填入 `checked`。`expert` 仍待簽核。2026-10-08 僅整理正文引用與書目，既有健康說法、來源原句與查證日期保留；本輪格式更新待 Reviewer 核對。
+
+## 參考文獻
+
+1. Bull JR, Rowland SP, Berglund Scherwitzl E, Scherwitzl R, Gemzell Danielsson K, Harper J. Real-world menstrual cycle characteristics of more than 600,000 menstrual cycles. NPJ Digit Med. 2019;2:83. doi:10.1038/s41746-019-0152-7. PMID: 31482137.
+2. Fehring RJ, Schneider M, Raviele K. Variability in the phases of the menstrual cycle. J Obstet Gynecol Neonatal Nurs. 2006;35(3):376-84. doi:10.1111/j.1552-6909.2006.00051.x. PMID: 16700687.

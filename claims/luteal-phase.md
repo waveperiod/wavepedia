@@ -33,7 +33,7 @@ expert: —
 
 # 「黃體期」表示什麼
 
-[原始研究的分期方法](https://www.nature.com/articles/s41746-019-0152-7)以排卵日後到下一次經期前一天作黃體期；[ASRM 2026 官方意見](https://www.asrm.org/globalassets/_asrm/practice-guidance/practice-guidelines/pdf/diagnosis-and-treatment-of-luteal-phase-deficiency.pdf)說明黃體與孕酮的生理作用及測量限制。[三隊列原始研究摘要](https://pubmed.ncbi.nlm.nih.gov/32104920/)觀察同一女性不同週期的變化。
+原始研究的分期方法以排卵日後到下一次經期前一天作黃體期 [1]；ASRM 2026 官方意見說明黃體與孕酮的生理作用及測量限制 [2]。三隊列原始研究摘要觀察同一女性不同週期的變化 [3]。
 
 ## 給 PM
 
@@ -43,4 +43,10 @@ expert: —
 - 十四天預設的支持及反例另見 R03 `luteal-phase-length`；不以另一研究的平均數替換成人人固定十二天。
 - 文案候選（待審）：黃體期是排卵後的階段。這裡依日期估算，不能確認妳已排卵或激素濃度。
 
-研究交稿：2026-10-07；`checked`／`expert` 未審。
+研究交稿：2026-10-07；Claude 已於同日[正式查證](https://github.com/waveperiod/wavepedia/pull/2#issuecomment-6045658829)並填入 `checked`。`expert` 仍待簽核。2026-10-08 僅整理正文引用與書目，既有健康說法、來源原句與查證日期保留；本輪格式更新待 Reviewer 核對。
+
+## 參考文獻
+
+1. Bull JR, Rowland SP, Berglund Scherwitzl E, Scherwitzl R, Gemzell Danielsson K, Harper J. Real-world menstrual cycle characteristics of more than 600,000 menstrual cycles. NPJ Digit Med. 2019;2:83. doi:10.1038/s41746-019-0152-7. PMID: 31482137.
+2. Practice Committee of the American Society for Reproductive Medicine and Practice Committee of the Society for Reproductive Endocrinology and Infertility, Gracia C, Jain T, Kalra S, Pier B, Sakkas D, et al. Diagnosis and treatment of luteal phase deficiency: a Committee Opinion. Fertil Steril. 2026;126(4):633-9. doi:10.1016/j.fertnstert.2026.06.014. PMID: 42414147.
+3. Najmabadi S, Schliep KC, Simonsen SE, Porucznik CA, Egger MJ, Stanford JB. Menstrual bleeding, cycle length, and follicular and luteal phase lengths in women without known subfertility: A pooled analysis of three cohorts. Paediatr Perinat Epidemiol. 2020;34(3):318-27. doi:10.1111/ppe.12644. PMID: 32104920.

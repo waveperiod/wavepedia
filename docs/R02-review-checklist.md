@@ -1,12 +1,14 @@
 # R02 · 四個名稱的查證及 App 對應
 
-交稿：2026-10-07。Researcher 查來源與名稱；**Claude 尚未 checked，expert 尚未簽核，F06 仍有研究 gate。**
+交稿：2026-10-07；收尾更新：2026-10-08。**四條 `checked: 2026-10-07` 已由 Claude 填入；`expert` 仍未簽核。** [正式查證評論](https://github.com/waveperiod/wavepedia/pull/2#issuecomment-6045658829)對應 Reviewer 提交 `2d735db57506624fbd63223903e21570c495e7f9`，本輪保留該提交及繁體字修正。
 
-獨立分支從 wavepedia `bbf53b284573b15e12ec40be7dba62aa66a47b52` 出發，不堆在 R03。只新增四條 claim／本清單；既有文章不改。R03 的常數與估算限制是另一個待審 PR：<https://github.com/waveperiod/wavepedia/pull/1>。
+本輪依最新 Researcher 規則整理 Vancouver 正文編號與參考文獻，保留健康說法、來源原句、閱讀層級、人群與 `checked` 日期。ASRM 2026 的既有 DOI 補入其 PubMed 書目 PMID:42414147，沒有增加健康說法。**新增書目格式及跨 PR「前」映射交接待 Claude 核對；本清單不宣告 F06 pass／done。**
+
+獨立分支從 wavepedia `bbf53b284573b15e12ec40be7dba62aa66a47b52` 出發，不堆在 R03。只涉及四條 claim／本清單；既有文章不改。R03 的常數與估算限制見另一個 PR：<https://github.com/waveperiod/wavepedia/pull/1>。
 
 ## 逐名稱 mapping（只讀原 App）
 
-基線 App HEAD `b51c34a4dfcf239b4b54a5c5f5b5de66726a00a6`。讀 `Wave/Localizable.xcstrings`、`TodayCycleSection.swift`、`CyclePhase.swift`、`CycleRules.swift`／`CycleCalculator.swift`，未修改原 checkout 或使用者未提交檔案。
+原交稿基線 App HEAD `b51c34a4dfcf239b4b54a5c5f5b5de66726a00a6`。本輪對照 [F06 PR #6](https://github.com/waveperiod/ios-app/pull/6) 當前 HEAD `4fa9e56ee5e2aa1bcc445fbf9a9cd0e852689658` 的已提交 `Wave/Localizable.xcstrings`、`TodayCycleSection.swift`、`CycleRules.swift`／`CycleCalculator.swift`；以下四個名稱及「估算」仍相符。只讀 Git 物件，未修改 App checkout 或使用者檔案。
 
 | F05 enum | F06 實際 string key／文字 | R02 條目 | 模型顯示與限制 |
 |---|---|---|---|
@@ -38,18 +40,22 @@
 
 原 App 的 `todayPhaseDuring`＝「經期記錄中」、`todayPhaseAfter`＝「最近經期記錄之後」不是上表四種生理階段。本次[ R03 PR #1](https://github.com/waveperiod/wavepedia/pull/1) 的 `calendar-phase-estimate` 提供其讀取限制；「後」不能翻成出血已結束。
 
-2026-10-07 協調 `cycle-status.json` 已記錄前窗口 **3 天**、中容許漏記 **1 天**、至少 **2 個完整週期／3 個起點**。這是產品顯示決策，不是醫學結論；待該會話實作完成後對其最終常數／新「前」key 補核對。目前原 App 尚無 before key，不能編造 `used_by` 名稱或聲稱已覆蓋新版本。
+F06 HEAD `4fa9e56` 已有 `string:todayPhaseBefore`＝「預估經期前」，由 `.beforePeriod` 顯示，且 `isEstimated: true` 使「估算」同時顯示。其依據對應 R03 `calendar-phase-estimate`，不作第五個生理階段定義。
+
+`CycleRules.beforePeriodWindowDays = 3` 為個人日期估值前的 1–3 天；`minimumCompletedCyclesForBefore = 2` 需要至少兩個完整起點間隔／三個實際起點。`recentBleedingGraceDays = 1` 的「中」記錄窗口優先於「前」。這些是產品顯示規則，不是醫學結論或臨床有效性門檻；R03 已補精確 `used_by` 與限制，**新增映射待 Claude 複核**。
 
 ## 檢查清單
 
 - [x] 四個條目各有完整 frontmatter、支持與限制來源、短原句、read 層級、population／not_for、實際 used_by。
-- [x] 全部 `checked`／`expert` 保持「—」。
+- [x] 四條保留 Claude 的 `checked: 2026-10-07`；`expert` 均為「—」，沒有由 Researcher 代填。
 - [x] 四個 key 與「估算」逐個對原 App String Catalog；沒有套用 role 示例中的假 `phase.luteal.desc` key。
 - [x] 解釋月經與濾泡期重疊，App 四區段只是呈現。
 - [x] 不輸出個人激素判定、運動／飲食處方或生育用途；不新增 R04／F08 後功能。
-- [ ] Claude 核對來源識別符、短原句、等級、人群及 mapping，填 checked。
+- [x] Claude 2026-10-07 正式核對四條既有內容並填 checked；評論與提交見上。
+- [x] 四條正文採 Vancouver 編號，與 frontmatter 的來源一一對應；參考文獻列 DOI／PMID，NHS 列官方網址與原閱讀日期。
+- [ ] Claude 核對本輪 Vancouver 格式及 R03 新增「前」mapping，不能由既有 checked 日期推定已審新增部分。
 - [ ] 專家簽 expert。
-- [ ] App 返修會話交最新 `beforePeriod` 新字串與常數，再補 mapping。
+- [x] 對照 F06 PR HEAD 的 before 字串與 3／2／1 常數，交 R03 `calendar-phase-estimate` 承接；此項為 Researcher 靜態對照。
 - [ ] recording 在 iOS 26.0／26.5 實際 launch／操作／UITest，檢查正常、空、最大字級並交截圖。Researcher 本次沒有 simulator 測試／截圖，不聲稱文獻可由 simulator 驗證。
 
 ## UI 核對案例（交 recording，未執行）
