@@ -40,9 +40,9 @@ expert: —
 
 # 十四天的來源與限制
 
-[ASRM 2022 官方意見](https://www.asrm.org/practice-guidance/practice-committee-documents/optimizing-natural-fertility-a-committee-opinion-2021/)把十四天寫成日曆法的假設，並在同節說明估算缺點。[ASRM 2026 官方 PDF](https://www.asrm.org/globalassets/_asrm/practice-guidance/practice-guidelines/pdf/diagnosis-and-treatment-of-luteal-phase-deficiency.pdf)列典型 12–14 天、可能 11–17 天；這不是 Wave 的分類門檻。
+ASRM 2022 官方意見把十四天寫成日曆法的假設，並在同節說明估算缺點 [1]。ASRM 2026 官方 PDF 列典型 12–14 天、可能 11–17 天；這不是 Wave 的分類門檻 [2]。
 
-[Bull 原始研究](https://www.nature.com/articles/s41746-019-0152-7)以 BBT／可選 LH 資料辨識週期，報告的平均黃體期為 12.4 天，存在變異。它排除了未辨識排卵／資料不足的週期，且有公司資助與作者利益關係；不能代表所有女性或替 Wave 驗證準確率。[另一隊列摘要](https://pubmed.ncbi.nlm.nih.gov/32104920/)以黏液高峰估排卵，亦未支持人人固定十四天。群體平均不同不等於黃體期生理機制受到否定。
+Bull 原始研究以 BBT／可選 LH 資料辨識週期，報告的平均黃體期為 12.4 天，存在變異。它排除了未辨識排卵／資料不足的週期，且有公司資助與作者利益關係；不能代表所有女性或替 Wave 驗證準確率 [3]。另一隊列摘要以黏液高峰估排卵，亦未支持人人固定十四天 [4]。群體平均不同不等於黃體期生理機制受到否定。
 
 ## 給 PM
 
@@ -51,4 +51,11 @@ expert: —
 - 2026-10-07 讀到的 luteal deficiency 網頁／PDF 是 **2026 新版**，DOI 尾碼為 `2026.06.014`，不能掛在 2021 的 PMID:33827766 下。2021 只核對了 PubMed 摘要，沒有用它支持新版全文數值。
 - 文案候選（待審）：有部分研究說，黃體期長度會變。這裡使用十四天作日期估算，沒有確認妳的排卵日。
 
-研究交稿日期：2026-10-07。`checked`、`expert` 未審。
+研究交稿：2026-10-07；Claude 已於同日[正式查證](https://github.com/waveperiod/wavepedia/pull/1#issuecomment-6045659263)並填入 `checked`。`expert` 仍待簽核。2026-10-08 僅整理正文引用與書目，既有健康說法、來源原句與查證日期保留；本輪格式更新待 Reviewer 核對。
+
+## 參考文獻
+
+1. Practice Committee of the American Society for Reproductive Medicine and the Practice Committee of the Society for Reproductive Endocrinology and Infertility, Penzias A, Azziz R, Bendikson K, Falcone T, Hansen K, et al. Optimizing natural fertility: a committee opinion. Fertil Steril. 2022;117(1):53-63. doi:10.1016/j.fertnstert.2021.10.007. PMID: 34815068.
+2. Practice Committee of the American Society for Reproductive Medicine and Practice Committee of the Society for Reproductive Endocrinology and Infertility, Gracia C, Jain T, Kalra S, Pier B, Sakkas D, et al. Diagnosis and treatment of luteal phase deficiency: a Committee Opinion. Fertil Steril. 2026;126(4):633-9. doi:10.1016/j.fertnstert.2026.06.014. PMID: 42414147.
+3. Bull JR, Rowland SP, Berglund Scherwitzl E, Scherwitzl R, Gemzell Danielsson K, Harper J. Real-world menstrual cycle characteristics of more than 600,000 menstrual cycles. NPJ Digit Med. 2019;2:83. doi:10.1038/s41746-019-0152-7. PMID: 31482137.
+4. Najmabadi S, Schliep KC, Simonsen SE, Porucznik CA, Egger MJ, Stanford JB. Menstrual bleeding, cycle length, and follicular and luteal phase lengths in women without known subfertility: A pooled analysis of three cohorts. Paediatr Perinat Epidemiol. 2020;34(3):318-27. doi:10.1111/ppe.12644. PMID: 32104920.

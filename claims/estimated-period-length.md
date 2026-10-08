@@ -33,7 +33,7 @@ expert: —
 
 # 五天是估算預設，不是出血結束日
 
-[BioCycle 論文摘要](https://pubmed.ncbi.nlm.nih.gov/22350580/)報告中位數五天。[NHS 官方衛教](https://www.nhs.uk/conditions/periods/)描述通常約五天及二至七天的概略範圍；此範圍不能當個人健康門檻。不同樣本的[三隊列研究](https://pubmed.ncbi.nlm.nih.gov/32104920/)報告中位數六天，且同一女性不同週期也有變化。
+BioCycle 論文摘要報告中位數五天 [1]。NHS 官方衛教描述通常約五天及二至七天的概略範圍；此範圍不能當個人健康門檻 [2]。不同樣本的三隊列研究報告中位數六天，且同一女性不同週期也有變化 [3]。
 
 此條評為 `moderate` 的是「有群體參考值而且存在變異」。沒有找到支持「每位女性這次一定在第五天結束」的證據。只讀兩篇論文摘要，不能宣稱已審全文。
 
@@ -44,4 +44,10 @@ expert: —
 - 五天不可用作不規律模式「中」的固定出血期，漏記也不代表結束；「中／後」依批准的記錄窗口另定。
 - 文案候選（待產品／Claude 審）：有部分研究說，經期天數因人而異。這裡依日期估算，不代表出血已結束。
 
-研究交稿日期：2026-10-07。`checked` 待 Claude 逐句查證；`expert` 待專家簽核。
+研究交稿：2026-10-07；Claude 已於同日[正式查證](https://github.com/waveperiod/wavepedia/pull/1#issuecomment-6045659263)並填入 `checked`。`expert` 仍待簽核。2026-10-08 僅整理正文引用與書目，既有健康說法、來源原句與查證日期保留；本輪格式更新待 Reviewer 核對。
+
+## 參考文獻
+
+1. Dasharathy SS, Mumford SL, Pollack AZ, Perkins NJ, Mattison DR, Wactawski-Wende J, et al. Menstrual bleeding patterns among regularly menstruating women. Am J Epidemiol. 2012;175(6):536-45. doi:10.1093/aje/kwr356. PMID: 22350580.
+2. NHS. Periods [Internet]. London: NHS; [cited 2026 Oct 7]. Available from: https://www.nhs.uk/conditions/periods/
+3. Najmabadi S, Schliep KC, Simonsen SE, Porucznik CA, Egger MJ, Stanford JB. Menstrual bleeding, cycle length, and follicular and luteal phase lengths in women without known subfertility: A pooled analysis of three cohorts. Paediatr Perinat Epidemiol. 2020;34(3):318-27. doi:10.1111/ppe.12644. PMID: 32104920.

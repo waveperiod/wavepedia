@@ -1,8 +1,10 @@
 # R03 · 算法假設交稿及查證清單
 
-交稿：2026-10-07；Researcher。**待 Claude 查證，不是 checked／expert／pass。**
+交稿：2026-10-07；收尾更新：2026-10-08。**三條 `checked: 2026-10-07` 已由 Claude 填入；`expert` 仍未簽核。** [正式查證評論](https://github.com/waveperiod/wavepedia/pull/1#issuecomment-6045659263)對應 Reviewer 提交 `04e5463809ebfd280cdd356eec4f433af025af73`，本輪保留該提交及繁體字修正。
 
-基線：wavepedia `bbf53b284573b15e12ec40be7dba62aa66a47b52`。只新增 claims／本文件，不修改既有 podcast 文章，不修改 App、PM 共用資料。
+本輪依最新 Researcher 規則整理 Vancouver 正文編號與參考文獻，保留健康說法、原句、來源與閱讀層級。既有 ASRM 2026 DOI 的書目補 PMID:42414147。「預估經期前」與 3／2／1 產品規則另補精確 mapping；**新增映射和書目格式待 Claude 複核，既有 checked 日期不涵蓋新增部分。本清單不宣告 F06 pass／done。**
+
+基線：wavepedia `bbf53b284573b15e12ec40be7dba62aa66a47b52`。只涉及本 PR 的三條 claims／本文件，不修改既有 podcast 文章、App 或 PM 共用資料。
 
 ## 條目與證據
 
@@ -16,7 +18,7 @@
 
 ## App 精確對應（只讀）
 
-2026-10-07 對照原 App 的 `Wave/Localizable.xcstrings`、`WaveKit/Sources/WaveKit/Domain/CycleRules.swift`、`CycleCalculator.swift` 和 `Wave/Features/Today/TodayCycleSection.swift`，App 基線 HEAD `b51c34a`；原目錄含使用者未提交工程／圖示，本次未修改。
+原交稿對照 App HEAD `b51c34a`。本輪對照 [F06 PR #6](https://github.com/waveperiod/ios-app/pull/6) 當前 HEAD `4fa9e56ee5e2aa1bcc445fbf9a9cd0e852689658` 的已提交 `Wave/Localizable.xcstrings`、`WaveKit/Sources/WaveKit/Domain/CycleRules.swift`、`CycleCalculator.swift` 和 `Wave/Features/Today/TodayCycleSection.swift`。只讀 Git 物件；本次未修改 App 或使用者檔案。
 
 | 實際 key／常數 | 此稿涵蓋 | UI 應看到的限制 |
 |---|---|---|
@@ -31,11 +33,14 @@
 | `todayCycleTitle`＝週期資訊 | calendar | 無經期／不確定選項按既定規則隱藏整卡 |
 | `todayPhaseDuring`＝經期記錄中 | calendar 的產品規則段 | 只表示記錄仍在漏記容許窗口 |
 | `todayPhaseAfter`＝最近經期記錄之後 | 同上 | 不表示生理出血已結束 |
-| `beforePeriod`／「前」新 key | 原 App 尚無；等 cycle／recording 實際新增後補 mapping | 至少三個真實起點、兩完整週期；一定是估算，不是 PMS／黃體期證明 |
+| `todayPhaseBefore`＝預估經期前 | calendar；`.beforePeriod` 對應的實際 key | 同時顯示「估算」；不確認下次開始日或生理階段 |
+| `beforePeriodWindowDays = 3` | calendar 的產品規則段 | 只在估計開始日前 1–3 天顯示；三天沒有被本條驗為臨床有效窗口 |
+| `minimumCompletedCyclesForBefore = 2` | 同上 | 至少兩個完整起點間隔／三個產品認定的實際起點；是啟用門檻，不是醫學結論 |
+| `recentBleedingGraceDays = 1` | 同上 | 「中」記錄窗口優先於「前」；未記錄不證明出血結束 |
 
-2026-10-07 協調 `cycle-status.json` 後續已記錄前 **3 天**、中容許漏記 **1 天**、至少 **2 個完整週期／3 個起點**。這些是產品決策，不是本稿從研究推得的 N；仍待 cycle 交最終實作常數／新 key 核對。兩個過往週期足夠啟用是產品門檻，沒有臨床驗證。15 天新週期分組也不是医学分類。
+上述 **3／1／2** 已與 F06 HEAD `4fa9e56` 的集中常數及計算分支核對：已完成起點間隔取平均、四捨五入至整天，剩餘 1–3 天才顯示「前」且 `isEstimated: true`；資料不足不借 onboarding 預設補值，也不建立預測起點。這些是產品決策，不是從本稿研究推得的醫學窗口或門檻。起點分組仍依 F05 的產品實作，本輪不宣告其臨床有效性或對後續 App 修改已驗收。
 
-R02 四個名稱條目已另交 [draft PR #2](https://github.com/waveperiod/wavepedia/pull/2)，同樣未 checked／expert；兩項不因開 PR 而解除 F06 gate。
+R02 四個名稱條目另見 [PR #2](https://github.com/waveperiod/wavepedia/pull/2)，其四條亦已有 Claude 的 `checked: 2026-10-07`，expert 未簽；兩 PR 本輪更新的審核與 F06 最終狀態由 PM／Claude 處理。
 
 ## 來源定位與版本
 
@@ -51,12 +56,14 @@ R02 四個名稱條目已另交 [draft PR #2](https://github.com/waveperiod/wave
 
 ## Researcher 本次已執行
 
-- [x] 三條有 claim、evidence／scope、sources、against、population、not_for、used_by、checked／expert 未審。
+- [x] 三條有完整 frontmatter；保留 Claude 的 `checked: 2026-10-07`，expert 均為「—」，沒有由 Researcher 代填。
 - [x] 原句、DOI／PMID（官方 NHS 明示不提供）、來源定位與 full／abstract 層級列出。
 - [x] 比較支持與不支持，區分個體變異、取樣及測量方法限制。
-- [x] 原 App key 與 5／14／15 常數只讀比對，未修改 App 或共享 PRD／決策。
+- [x] F06 PR HEAD 的所有 used_by key 與 5／14／3／2 常數只讀比對，新增 before key 精確對應 calendar-phase-estimate，未修改 App 或共享 PRD／決策。
 - [x] 字串／產品窗口的限制與特殊人群交接。
-- [ ] Claude 核對原句、等級、人群及 used_by，填 checked。
+- [x] Claude 2026-10-07 正式核對三條既有內容並填 checked；評論與提交見上。
+- [x] 三條正文採 Vancouver 編號，與 frontmatter 來源一一對應；期刊列 DOI／PMID，NHS 列網址與原閱讀日期。
+- [ ] Claude 複核本輪新增 before key、3／2／1 產品規則映射及 Vancouver 書目格式；既有 checked 不代替新增部分的審核。
 - [ ] 專家簽核 expert。
 - [ ] recording 在 iOS 26.0／26.5 操作 App，驗標籤、估算、空／大字狀態並交截圖；Researcher 沒有聲稱論文經 simulator 驗證。
 
@@ -64,4 +71,4 @@ R02 四個名稱條目已另交 [draft PR #2](https://github.com/waveperiod/wave
 
 規律 L=28：第 1／5 天月經期，第 6／13 天濾泡期，第14天排卵期，第15／28天黃體期，四者均顯示「估算」。第29天保留日期計數但階段空；L≤20 的空 phase 是模型限制。真實第6天仍有出血時，現行規律模型仍可能顯示濾泡期，不應宣稱出血結束。
 
-不規律：「前」只在記錄足夠時依平均估，顯示「估算」；記錄不足不顯前。最近出血（含開始日）在批准 N 天內為「中」，N+1 為「後」；未貼貼紙不代表停止出血。前／中／後的最新 key 和窗口值由 App 返修會話交回後補查，不能以本稿舊 key 靜態核對代替整合驗收。
+不規律：至少兩個完整間隔／三個起點，依平均值估計開始日前 1–3 天顯示「預估經期前」和「估算」；資料不足不顯前。最近出血（含開始日）後 1 天仍為「中」，超過窗口為「後」；新出血的「中」窗口優先於「前」。未貼貼紙不代表停止出血。本輪只完成靜態 mapping，不能代替 recording 的整合 UI 驗收。
